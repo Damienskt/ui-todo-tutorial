@@ -6,7 +6,7 @@ describe("CRUD flow - ui-todo", () => {
   });
 
   it("should display header", () => {
-    cy.get("[data-cy=header]").should("have.text", "TODO");
+    cy.get("[data-cy=header]").should("have.text", "TODOO");
   });
 
   it("should be able to add todo", () => {
