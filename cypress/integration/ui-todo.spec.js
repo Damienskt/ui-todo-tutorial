@@ -21,4 +21,20 @@ describe("CRUD flow - ui-todo", () => {
       "Buy GroceriesWrite TODO appSend masks to grandma"
     );
   });
+
+  it("should be able to delete todo", () => {
+    cy.get("[data-cy=todo-task__button-delete").first().click();
+    cy.get("[data-cy=todo-task__name]").should(
+      'not.have.text',
+      "Buy Groceries"
+    );
+  });
+
+  it("should be able to delete all todo", () => {
+    const options = { multiple: true};
+    cy.get("[data-cy=todo-task__button-delete").click(options);
+    cy.get("[data-cy=todo-task__name]").should(
+      'not.exist'
+    );
+  });
 });
