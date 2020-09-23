@@ -1,4 +1,4 @@
-const DEV_URL = "http://localhost:3000";
+const DEV_URL = "https://damienskt.github.io/ui-todo-tutorial/";
 
 describe("CRUD flow - ui-todo", () => {
   before(() => {

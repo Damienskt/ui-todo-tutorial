@@ -37,6 +37,7 @@ jobs:
       # TODO: Add a stage for running cypress tests
       - name: Run cypress tests
         uses: cypress-io/github-action@v1
+        
       # TODO: Add a stage to generate cypress videos and screenshots as artifacts
 
       # Stage to deploy application to github page
